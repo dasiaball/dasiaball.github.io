@@ -39,7 +39,8 @@ $(function () {
     //////////ONLY CHANGE BELOW THIS POINT///////////
     /////////////////////////////////////////////////
 
-   createCollectable("steve", 200, 170, 6, 0.7); //your example function call
+   createCollectable("steve", 300, 270, 6, 0.7); //your example function call
+   
 
 /////////////////////////////////////////////////
 //////////ONLY CHANGE ABOVE THIS POINT///////////
