@@ -19,7 +19,7 @@ $(function () {
     createPlatform(-50, -50, canvas.width + 100, 50); //top
     createPlatform(-50, canvas.height - 10, canvas.width + 100, 200); //right
     createPlatform(-50, -50, 50, canvas.height + 500); //bottom
-    createPlatform(canvas.width, -50, 50, canvas.height + 100);\
+    createPlatform(canvas.width, -50, 50, canvas.height + 100);
     
 
     /**
@@ -40,25 +40,18 @@ $(function () {
     //////////ONLY CHANGE BELOW THIS POINT///////////
     /////////////////////////////////////////////////
 
-   createCollectable("steve", 300, 270, 6, 0.7); //your example function call
    
-
-/////////////////////////////////////////////////
-//////////ONLY CHANGE ABOVE THIS POINT///////////
-/////////////////////////////////////////////////
-
-
-
+   
     // TODO 1
     // Create platforms()
     // You must decide the x position, y position, width, and height of the platforms
     // example usage: createPlatform(x,y,width,height)
 
-    createPlatform(100, 625, 200, 10);
-    createPlatform(300, 450, 200, 10);
-    createPlatform(250, 400, 200, 10);
-    createPlatform(200, 500, 200, 10);
-   createPlatform( 200, 500, 200, 10);
+    createPlatform(200, 650, 200, 10);
+    createPlatform(400, 525, 200, 10);
+    createPlatform(600, 400, 200, 10);
+    createPlatform(800, 525, 200, 10);
+    createPlatform(1000, 400, 200, 10);
    
 
 
@@ -71,7 +64,8 @@ $(function () {
     // You must decide on the collectable type, the x position, the y position, the gravity, and the bounce strength
     // Your collectable choices are 'database' 'diamond' 'grace' 'kennedi' 'max' and 'steve'; more can be added if you wish
     // example usage: createCollectable(type, x, y, gravity, bounce)
-
+createCollectable("steve",200, 625, 20, 0.5)
+createCollectable("grace", 800, 550, 20, 0.5)
 
 
 
@@ -81,8 +75,9 @@ $(function () {
     // You must decide the wall you want the cannon on, the position on the wall, and the time between shots in milliseconds
     // Your wall choices are: 'top' 'left' 'right' and 'bottom'
     // example usage: createCannon(side, position, delay, width, height)
+    createCannon("right", 600, 500); 
+    createCannon("left", 200, 500); 
     
-
 
 
 
