@@ -15,7 +15,7 @@
 			display: block;
 			position: absolute;
 			top: 100px;
-			left: 200px; /* <--- Change me! */
+			left: 400px; /* <--- Change me! *
 		}
 		.board{
 			height: 100vh;
@@ -51,8 +51,8 @@
 			box.on('click', handleBoxClick);
 
 			// moves the Box to a new position on the screen along the X-Axis
-			function moveBoxTo() {
-				box.css("left", 0);
+			function moveBoxTo(newPositionX) {
+				box.css("left", newPositionX);
 			}
 
 			// changes the text displayed on the Box
@@ -65,7 +65,7 @@
 			//////////////////////////////////////////////////////////////////
 			
 			// TODO 2 - Variable declarations 
-			var positionX = 0;
+			
 			
 
 			
@@ -74,12 +74,9 @@
 			it should move the Box to a new location. If the box drifts off the screen
 			turn it around! 
 			*/
-			function update() {
-		   positionX = positionX + 10;
-			moveBoxTo(positionX); 10
-				
+			
 
-			};
+			
 
 			/* 
 			This Function will be called each time the box is clicked. Each time it is called,
