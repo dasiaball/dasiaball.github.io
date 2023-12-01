@@ -25,13 +25,27 @@ var init = function (window) {
 
 
         // TODO 2 : Create a function that draws a circle 
-        circle = draw.randomCircleInArea(canvas, true, true, "#999", 2);
-physikz.addRandomVelocity(circle, canvas);
-view.addChild(circle);
-circles.push(circle);
+        var drawCircle = function(){
+
+            //create the circle
+            //randomCircleInArea(area, randomizeAlpha, addCross, borderColor, borderThickness, randomRadialProps)
+            circle = draw.randomCircleInArea(canvas, true, true, "#999", 2);
+
+            //set motion properties
+            physikz.addRandomVelocity(circle, canvas);
+
+            //add the circle to circles array, add to view 
+            circles.push(circle);
+            view.addChild(circle);
+        }
         
 
         // TODO 3 / 7 : Call the drawCircle() function 
+        drawCircle() 
+        drawCircle() 
+        drawCircle() 
+        drawCircle() 
+        drawCircle() 
 
 
         ////////////////////////////////////////////////////////////
@@ -45,7 +59,7 @@ circles.push(circle);
         */
         function update() {
             // TODO 4 : Update the circle's position //
-
+            drawCircle()
             
             // TODO 5 / 10 : Call game.checkCirclePosition() on your circles.
            
